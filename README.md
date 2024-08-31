@@ -1,7 +1,15 @@
+
+
+小白，自用，试用6.6测试内核（6.6.46）
+<br>
+以下说明来自 [jym66/openWRT-OrangePiZero3](https://github.com/jym66/openWRT-OrangePiZero3) 
+
+
+---
+
 <div align="center">
 <img width="768" src="https://cdn.jsdelivr.net/gh/haiibo/OpenWrt/images/openwrt.png"/>
 <h1>OpenWrt — 香橙派zero3 自用</h1>
-
 </div>
 
 
