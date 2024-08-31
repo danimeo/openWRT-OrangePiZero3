@@ -2,7 +2,7 @@
 
 小白，自用，试用6.6测试内核（6.6.46）
 <br>
-以下说明来自 [jym66/openWRT-OrangePiZero3](https://github.com/jym66/openWRT-OrangePiZero3) 
+本Forked仓库（包括以下说明）来自 [jym66/openWRT-OrangePiZero3](https://github.com/jym66/openWRT-OrangePiZero3) 
 
 
 ---
