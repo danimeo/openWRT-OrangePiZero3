@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # 修改默认IP
-# sed -i 's/192.168.0.55/192.168.4.200/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.0.55/192.168.4.200/g' package/base-files/files/bin/config_generate
 
 # 更改默认 Shell 为 zsh
-# sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
+sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # TTYD 免登录
-# sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
+sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 
 # 移除要替换的包
 rm -rf feeds/luci/themes/luci-theme-argon
