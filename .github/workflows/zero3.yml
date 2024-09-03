@@ -55,9 +55,9 @@ jobs:
     - name: Combine Disks
       uses: easimon/maximize-build-space@master
       with:
-        swap-size-mb: 1024
-        temp-reserve-mb: 100
-        root-reserve-mb: 1024
+        swap-size-mb: 2048
+        temp-reserve-mb: 256
+        root-reserve-mb: 2048
 
     - name: Checkout
       uses: actions/checkout@main
@@ -67,6 +67,7 @@ jobs:
         df -hT $GITHUB_WORKSPACE
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
+        git checkout 87cc82ea69e1bbfaf5383cfa78ebc3ee65e0a66d
         echo "OPENWRT_PATH=$PWD" >> $GITHUB_ENV
         COMMIT_AUTHOR=$(git show -s --date=short --format="作者: %an")
         echo "COMMIT_AUTHOR=$COMMIT_AUTHOR" >> $GITHUB_ENV
