@@ -1,8 +1,13 @@
 
 
-小白，自用，试用6.6测试内核（6.6.46）
+小白，自用
 <br>
 本fork仓库（包括以下说明）来自 [jym66/openWRT-OrangePiZero3](https://github.com/jym66/openWRT-OrangePiZero3) 
+
+- 内核版本：6.1.89
+- ext4 rootfs分区大小：4.00 GB
+- 固件默认管理地址：`192.168.4.200` IP：`192.168.4.200` 网关：`192.168.4.1` DNS：`192.168.4.1`
+- 默认用户：`root` 默认密码：`password`
 
 
 ---
