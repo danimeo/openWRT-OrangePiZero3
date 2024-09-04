@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # 修改默认IP
-sed -i 's/192.168.0.55/192.168.4.200/g' package/base-files/files/bin/config_generate
+# sed -i 's/192.168.0.55/192.168.4.200/g' package/base-files/files/bin/config_generate
 sed -i 's/192.168.1.1/192.168.4.200/g' package/base-files/files/bin/config_generate
+sed -i "s/set network.\$1.proto='static'/set network.\$1.proto='static'\nset network.\$1.gateway='192.168.4.1'\nset network.\$1.dns='192.168.4.1'/g" package/base-files/files/bin/config_generate
 
 # 更改默认 Shell 为 zsh
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
