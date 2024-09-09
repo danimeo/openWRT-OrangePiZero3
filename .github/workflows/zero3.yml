@@ -17,6 +17,9 @@ env:
   FIRMWARE_RELEASE: true
   FIRMWARE_TAG: zero3
   TZ: Asia/Shanghai
+  DEFAULT_IP_ADDR: 192.168.4.200
+  DEFAULT_GATEWAY: 192.168.4.1
+  DEFAULT_DNS: 192.168.4.1
 
 jobs:
   Build:
@@ -184,7 +187,9 @@ jobs:
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
           - 🚀 内核版本: ${{ env.KERNEL }}
-          - 🌐 默认地址: 192.168.4.200
+          - 🌐 默认地址: ${{ env.DEFAULT_IP_ADDR }}
+          - 🌐 默认网关: ${{ env.DEFAULT_GATEWAY }}
+          - 🌐 默认DNS: ${{ env.DEFAULT_DNS }}
           - 🔑 默认密码: password
           ### 🧊 固件版本
           - 固件编译前最后一次➦[主源码](${{ env.REPO_URL }})更新记录
